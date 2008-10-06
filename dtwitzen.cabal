@@ -1,0 +1,21 @@
+Name:			dtwitzen
+Version:		0.2
+Homepage:		http://ooxo.org/dtwitzen/
+Synopsis:		A compact twitter client for dzen
+Category:		Network
+License:		BSD3
+License-file:		LICENSE
+Author:			Kohei Ozaki
+Maintainer:		Kohei Ozaki <eowner@gmail.com>
+Cabal-Version:		>= 1.2
+
+library
+  Buildable:		False
+  Build-Depends:	base, filepath, directory, unix, process,
+                        utf8-string >= 0.3, base64-string >= 0.1,
+                        HTTP >= 3001.0.4, hxt >= 7.4,
+                        network >= 2.1.0.0
+
+executable dtwitzen
+  Executable:		dtwitzen
+  Main-is:		Dtwitzen.hs
